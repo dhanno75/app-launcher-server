@@ -26,8 +26,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/launcher", launcherRouter);
-// app.use("/users", userRouter);
-// app.use("/recipe", recipeRouter);
 
 app.listen(PORT, () =>
   console.log(`The server is connected to port: ${PORT} ☕☕`)

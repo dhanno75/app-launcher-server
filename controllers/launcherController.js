@@ -25,7 +25,7 @@ export const getAllApps = async (req, res, next) => {
   try {
     const apps = await Launcher.find();
 
-    res.status(201).json({
+    res.status(200).json({
       status: "success",
       data: apps,
     });
